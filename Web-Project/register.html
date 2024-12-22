@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for the Event</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: rgb(199, 117, 117);">Register for the Tech Conference</h2>
+        <form action="#" method="GET">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="preferences">Session Preference:</label>
+            <select id="preferences" name="preferences" required>
+                <option value="" disabled selected>Select a session</option>
+                <option value="morning" >Morning Session</option>
+                <option value="afternoon">Afternoon Session</option>
+                <option value="full">Full Day</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
+
+

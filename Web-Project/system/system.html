@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body>
+    <div class="w-75 m-auto py-4">
+
+        <div class="form-group">
+            <label for="ticketName">Name :</label>
+            <input type="text" class="form-control" id="ticketName">
+
+        </div>
+
+        <div class="form-group">
+            <label for="ticketPrice">Ticket Price :</label>
+            <input type="number" class="form-control" id="ticketPrice">
+
+        </div>
+
+        <div class="form-group">
+            <label for="ticketCategory">Category :</label>
+            <input type="text" class="form-control" id="ticketCategory">
+
+        </div>
+
+        <div class="form-group">
+            <label for="ticketDesc">Description :</label>
+            <textarea style="resize:none;" type="text" class="form-control" id="ticketDesc"></textarea>
+
+        </div>
+
+        <button onclick="addTicket()" class="btn btn-info">Add</button>
+
+    </div>
+
+    <div class="w-50 m-auto p-3">
+        <input onkeyup="searchTickets(this.value)" type="text" placeholder="search" class="form-control" name="" id="">
+    </div>
+
+
+    <table class="table text-center w-75 m-auto py-3">
+        <thead>
+            <th>index</th>
+            <th>Name </th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>update</th>
+            <th>delete</th>
+        </thead>
+        
+        <tbody id="tableBody">
+
+        </tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
